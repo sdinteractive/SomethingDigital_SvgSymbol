@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SomethingDigital_SvgSymbol>
+             <version>0.1.0</version>
+        </SomethingDigital_SvgSymbol>
+    </modules>
+    <admin>
+    </admin>
+    <global>
+        <helpers>
+            <svgsymbol>
+                <class>SomethingDigital_SvgSymbol_Helper</class>
+            </svgsymbol>
+        </helpers>
+        <blocks>
+            <core>
+                <rewrite>
+                    <template>SomethingDigital_SvgSymbol_Block_Template</template>
+                </rewrite>
+            </core>
+        </blocks>
+    </global>
+    <default>
+        <svgsymbol>
+            <settings>
+                <enabled>1</enabled>
+                <path><![CDATA[images/svg/symbols.svg]]></path>
+            </settings>
+        </svgsymbol>
+    </default>
+</config>
